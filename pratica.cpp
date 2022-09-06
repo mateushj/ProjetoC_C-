@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main(){
+	int Algoritmos[3][2],Calculo[3][2];
+	float media[3];
+	printf ("ALGORITMOS\nPor favor informe as 2 notas em Algoritmos do PRIMEIRO Aluno\nPrimeira nota: ");
+	scanf ("%d",&Algoritmos[0][0]);
+	printf ("Segunda nota: ");
+	scanf ("%d",&Algoritmos[0][1]);
+	printf ("Por favor informe as 2 notas em Algoritmos do SEGUNDO Aluno\nPrimeira nota: ");
+	scanf ("%d",&Algoritmos[1][0]);
+	printf ("Segunda nota: ");
+	scanf ("%d",&Algoritmos[1][1]);
+	printf ("Por favor informe as 2 notas em Algoritmos do TERCEIRO Aluno\nPrimeira nota: ");
+	scanf ("%d",&Algoritmos[2][0]);
+	printf ("Segunda nota: ");
+	scanf ("%d",&Algoritmos[2][1]);
+	printf ("\nCALCULO\nPor favor informe as 2 notas em Calculo do PRIMEIRO Aluno\nPrimeira nota: ");
+	scanf ("%d",&Calculo[0][0]);
+	printf ("Segunda nota: ");
+	scanf ("%d",&Calculo[0][1]);
+	printf ("Por favor informe as 2 notas em Calculo do SEGUNDO Aluno\nPrimeira nota: ");
+	scanf ("%d",&Calculo[1][0]);
+	printf ("Segunda nota: ");
+	scanf ("%d",&Calculo[1][1]);
+	printf ("Por favor informe as 2 notas em Calculo do TERCEIRO Aluno\nPrimeira nota: ");
+	scanf ("%d",&Calculo[2][0]);
+	printf ("Segunda nota: ");
+	scanf ("%d",&Calculo[2][1]);
+	media[0] = (Algoritmos[0][0] + Algoritmos[0][1]) / ((float) 2);
+	media[1] = (Algoritmos[1][0] + Algoritmos[1][1]) / ((float) 2);
+	media[2] = (Algoritmos[2][0] + Algoritmos[2][1]) / ((float) 2);
+	printf ("\nALGORITMOS\nA media obtida pelo PRIMEIRO aluno foi de: %.2f\n",media[0]);
+	printf ("A media obtida pelo SEGUNDO aluno foi de: %.2f\n",media[1]);
+	printf ("A media obtida pelo TERCEIRO aluno foi de: %.2f\n",media[2]);
+	media[0] = (Calculo[0][0] + Calculo[0][1]) / ((float) 2);
+	media[1] = (Calculo[1][0] + Calculo[1][1]) / ((float) 2);
+	media[2] = (Calculo[2][0] + Calculo[2][1]) / ((float) 2);
+	printf ("\nCALCULO\nA media obtida pelo PRIMEIRO aluno foi de: %.2f\n",media[0]);
+	printf ("A media obtida pelo SEGUNDO aluno foi de: %.2f\n",media[1]);
+	printf ("A media obtida pelo TERCEIRO aluno foi de: %.2f\n",media[2]);
+}
